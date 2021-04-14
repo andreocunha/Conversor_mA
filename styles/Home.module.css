@@ -1,0 +1,123 @@
+.container {
+  min-height: 100vh;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  padding: 5rem 0;
+  display: flex;
+  height: 70vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  width: 100%;
+  height: 100px;
+  border-top: 1px solid #eaeaea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #0070f3;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+.title {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 3rem;
+  margin-top: 1rem;
+  color: #0070f3;
+}
+
+.title,
+.description {
+  text-align: center;
+}
+
+.inputArea {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.inputValue {
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding-left: 1rem;
+}
+
+.titlePV {
+  font-size: 2rem;
+  margin-bottom: 4rem;
+}
+
+.inputArea h3 {
+  margin: 0;
+  padding: 0;
+  margin-right: 2px;
+}
+
+.inputBox {
+  width: 60px;
+  font-size: 18px;
+  height: 1.8rem;
+  margin-left: 5px;
+  margin-right: 5px;
+  font-weight: bold;
+  text-align: center;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  .inputArea input[type='range'] {
+    overflow: hidden;
+    width: 100%;
+    -webkit-appearance: none;
+    background-color: #d3d3d3;
+  }
+  
+  .inputArea input[type='range']::-webkit-slider-runnable-track {
+    height: 2rem; /* Specified height */
+    -webkit-appearance: none;
+    color: #13bba4;
+    margin-top: -1px;
+  }
+  
+  .inputArea input[type='range']::-webkit-slider-thumb {
+    width: 25px; /* Set a specific slider handle width */
+    -webkit-appearance: none;
+    height: 2rem; /* Specified height */
+    cursor: ew-resize;
+    background: #434343;
+    box-shadow: -100vw 0 0 100vw  #4CAF50;
+  }
+}
+  
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .inputArea {
+    width: 90vw;
+  }
+}
