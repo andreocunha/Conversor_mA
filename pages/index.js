@@ -45,9 +45,19 @@ export default function Home() {
       </h1>   
 
       <main className={styles.main}>
-        <h1 className={styles.titlePV}>Valor em percentual: {valPorc} %</h1>
-        <h1 className={styles.titlePV}>Valor em corrente: {valmA} mA</h1>
-        <h1 className={styles.titlePV}>Valor AITRT: {valAITRT}</h1>
+        <div className={styles.result}>
+          <h1 className={styles.titlePV} style={{color: '#000000'}}>Valor em percentual: </h1>
+          <h1>{valPorc} %</h1>
+        </div>
+        <div className={styles.result}>
+          <h1 className={styles.titlePV} style={{color: '#000000'}}>Valor em corrente: </h1>
+          <h1>{valmA} mA</h1>
+        </div>
+        <div className={styles.result}>
+          <h1 className={styles.titlePV} style={{color: '#000000'}}>Valor AITRT: </h1>
+          <h1>{valAITRT}</h1>
+        </div>
+        
 
         <h2>Entre com a faixa da U.E.:</h2>
         <div className={styles.inputArea}>
