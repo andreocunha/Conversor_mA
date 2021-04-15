@@ -18,7 +18,7 @@ export default function Home() {
       return;
     }
 
-    if(PV == 0){
+    if(PV === 0 && F !== 0){
       setValAITRT(0);
       setValPorc(0);
       return;
