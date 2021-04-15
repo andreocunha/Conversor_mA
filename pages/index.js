@@ -40,22 +40,23 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <main className={styles.main}>
+
       <h1 className={styles.title}>
         Conversor mA
       </h1>   
 
-      <main className={styles.main}>
         <div className={styles.result}>
-          <h1 className={styles.titlePV} style={{color: '#000000'}}>Valor em percentual: </h1>
-          <h1>{valPorc} %</h1>
+          <h2 className={styles.titlePV} style={{color: '#000000'}}>Valor em percentual: </h2>
+          <h2>{valPorc} %</h2>
         </div>
         <div className={styles.result}>
-          <h1 className={styles.titlePV} style={{color: '#000000'}}>Valor em corrente: </h1>
-          <h1>{valmA} mA</h1>
+          <h2 className={styles.titlePV} style={{color: '#000000'}}>Valor em corrente: </h2>
+          <h2>{valmA} mA</h2>
         </div>
         <div className={styles.result}>
-          <h1 className={styles.titlePV} style={{color: '#000000'}}>Valor AITRT: </h1>
-          <h1>{valAITRT}</h1>
+          <h2 className={styles.titlePV} style={{color: '#000000'}}>Valor AITRT: </h2>
+          <h2>{valAITRT}</h2>
         </div>
         
 
@@ -114,13 +115,13 @@ export default function Home() {
           />
         </div>
 
-      </main>
-
-      <footer className={styles.footer}>
+        <footer className={styles.footer}>
         <p>
           Powered by <a href="http://andreoliveiracunha.com.br/">André Oliveira Cunha</a>
         </p>
       </footer>
+
+      </main>
     </div>
   )
 }
