@@ -29,20 +29,20 @@ export default function Home() {
         Conversor mA
       </h1>   
 
-      <div className={styles.inputArea}>
-        <h3>FINAL</h3>
-        <h3> = </h3>
-        <input 
-          className={styles.inputBox}
-          value={valF}
-          onChange={({ target: { value: radius } }) => { 
-            setValF(radius); 
-            calculaPV(valI, radius, valPV)
-          }}
-        />
-      </div>
-
       <main className={styles.main}>
+        <div className={styles.inputArea}>
+          <h3>FINAL</h3>
+          <h3> = </h3>
+          <input 
+            className={styles.inputBox}
+            value={valF}
+            onChange={({ target: { value: radius } }) => { 
+              setValF(radius); 
+              calculaPV(valI, radius, valPV)
+            }}
+          />
+        </div>
+
         <div className={styles.inputArea}>
           <h3>INICIAL</h3>
           <h3> = </h3>
