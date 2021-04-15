@@ -117,7 +117,7 @@ export default function Home() {
 
         <footer className={styles.footer}>
         <p>
-          Powered by <a href="http://andreoliveiracunha.com.br/">André Oliveira Cunha</a>
+          Created by <a href="http://andreoliveiracunha.com.br/">André Oliveira Cunha</a>
         </p>
       </footer>
 
