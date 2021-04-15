@@ -122,8 +122,3 @@ export default function Home() {
     </div>
   )
 }
-
-
-// i, f, pv
-
-// pv = 
