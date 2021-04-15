@@ -18,7 +18,7 @@ export default function Home() {
       return;
     }
 
-    if(PV < I && PV < F){
+    if(PV == 0){
       setValAITRT(0);
       setValPorc(0);
       return;
@@ -29,7 +29,7 @@ export default function Home() {
     let resultAITRT = ((resultmA - 4)*28479)/16;
 
     setValPorc(resultPorc.toFixed(2));
-    setValAITRT(resultAITRT.toFixed(2));
+    setValAITRT(resultAITRT.toFixed(0));
     setValmA(resultmA.toFixed(2));
   }
 
