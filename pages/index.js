@@ -67,7 +67,7 @@ export default function Home() {
           <input 
             className={styles.inputBox}
             value={valI}
-            type={'number'}
+            type={'text'}
             onChange={({ target: { value: radius } }) => { 
               setValI(radius); 
               calculaPV(radius, valF, valPV)
@@ -81,7 +81,7 @@ export default function Home() {
           <input 
             className={styles.inputBox}
             value={valF}
-            type={'number'}
+            type={'text'}
             onChange={({ target: { value: radius } }) => { 
               setValF(radius); 
               calculaPV(valI, radius, valPV)
@@ -107,7 +107,7 @@ export default function Home() {
           <input 
             className={styles.inputBox}
             value={valPV}
-            type={'number'}
+            type={'text'}
             onChange={({ target: { value: radius } }) => { 
               setValPV(radius); 
               calculaPV(valI, valF, radius)
